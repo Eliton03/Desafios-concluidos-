@@ -1,0 +1,190 @@
+/* 🔄 Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* 🧱 CABEÇALHO */
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  gap: 20px; /* espaçamento entre os grupos */
+}
+
+#header div {
+  display: flex;
+  align-items: center;
+  margin: 0px;
+}
+
+#search input {
+  width: 300px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+/* 🖼️ Ícones no header */
+#header img {
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  user-select: none; /* evita seleção ao clicar */
+}
+
+/* 📺 CONTEÚDO PRINCIPAL */
+#conteudo-principal {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+  align-items: flex-start;
+}
+
+/* 🎥 VÍDEO PRINCIPAL */
+#main-content {
+  flex: 2;
+}
+
+#video-principal {
+  background-color: white;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.05);
+}
+
+#video-principal h1 {
+  font-size: 20px;
+  margin-top: 10px;
+  color: #111;
+}
+
+/* 📌 BOTÕES DE AÇÃO */
+#botoes {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+  margin-top: 15px;
+  padding: 5px; 
+;
+}
+
+#botoes .item img {
+  display: inline;
+  width: 100%;
+  height: 30px; 
+  cursor: pointer;
+}
+
+/* 🎞️ COLUNA DE VÍDEOS */
+.videos-coluna {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-height: 150vh;
+  padding-right: 10px;
+}
+
+/* 🎬 ITEM DE VÍDEO */
+.video-item {
+  background-color: white;
+  border-radius: 8px;
+  padding: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  display: flex;
+  gap: 10px;
+}
+
+.video-item iframe {
+  width: 100%;
+  height: 200px; 
+  border-radius: 5px;
+}
+
+.titulo-video {
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #222;
+}
+#logo img{
+  width: 80%;
+  /* espaçamento entre o logo e o menu */
+  height: 20px;
+}
+.thumb iframe {
+  width: 160px;
+  height: 90px;
+  border-radius: 5px;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.titulo-video {
+  font-size: 14px;
+  font-weight: bold;
+  color: #222;
+}
+
+.canal-video,
+.views-video {
+  font-size: 12px;
+  color: #666;
+}
+/* Grupo menu + logo */
+#menu-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* junta menu e logo mais coladinhos */
+}
+/* Barra de pesquisa e ícone */
+#search-area {
+  display: flex;
+  align-items: center;
+  gap: 5px; /* espaço pequeno entre input e ícone */
+  
+
+}
+#icons-right {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* espaço entre os ícones */
+}
+#search-input {
+  width: 400px; /* largura do campo de pesquisa */
+  padding: 8px; /* espaçamento interno */
+  border: 1px solid #ccc; /* borda cinza clara */
+  border-radius: 4px; /* cantos arredondados */
+  font-size: 14px; /* tamanho da fonte */
+}
+#perfil-canal {
+  width: 40px; /* largura da imagem do perfil */
+  height: 40px; /* altura da imagem do perfil */
+  border-radius: 0%; /* deixa a imagem redonda */
+  object-fit: cover; /* cobre todo o espaço sem distorcer */
+}
+#video-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* espaçamento entre os elementos */
+  margin-top: 20px; /* espaço acima do vídeo */
+}
