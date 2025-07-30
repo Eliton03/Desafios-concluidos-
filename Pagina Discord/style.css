@@ -1,0 +1,288 @@
+/* RESET BÁSICO */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #404eed;
+  color: #fff;
+}
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}
+
+.logo {
+  width: 120px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* HERO SECTION */
+.hero {
+  background-image: url("assets/Header Background.png"); /* ou .svg se for SVG */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  ;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 80px 40px;
+  color: #fff;
+}
+
+.hero-content {
+  max-width: 600px; /* ou outro valor em px ou % */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* se quiser centralizar o texto */
+  z-index: 2; 
+
+}
+
+.hero-content h1 {
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.btn {
+  padding: 12px 20px;
+  border-radius: 40px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn-primary {
+  background-color: #fff;
+  color: #23272a;
+}
+
+.btn-secondary {
+  background-color: #23272a;
+  color: #fff;
+}
+
+.hero-image {
+  flex: 1;
+  min-width: 300px;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 500px;
+  
+}
+.section-1 {
+  background-color: #fff;
+  color: #23272a;
+  padding: 80px 40px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.image-box,
+.text-box {
+  flex: 1;
+  min-width: 300px;
+}
+
+.image-box img {
+  width: 100%;
+  max-width: 500px;
+}
+
+.text-box h2 {
+  font-family: 'Luckiest Guy', cursive;
+  font-weight: 100;
+  font-size: 32px;
+  margin-bottom: 20px;
+  
+}
+
+.text-box p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+.section-2 {
+  background-color: #f6f6f6;
+  color: #23272a;
+  padding: 80px 40px;
+}
+
+/* Inverte os elementos (texto esquerda, imagem direita > para imagem esquerda, texto direita) */
+.container.reverse {
+  flex-direction: row-reverse;
+}
+.section-3 {
+  background-color: #fff;
+  color: #23272a;
+  padding: 80px 40px;
+}
+.final-section {
+  background-color: #fff;
+  color: #23272a;
+  text-align: center;
+  padding: 100px 40px;
+}
+
+.final-content h2 {
+  font-family: 'Luckiest Guy', cursive;
+  font-weight: 100;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.final-content p {
+  font-size: 18px;
+  margin-bottom: 40px;
+  max-width: 600px;
+  margin-inline: auto;
+}
+
+.final-content img {
+  width: 100%;
+  max-width: 600px;
+}
+footer {
+  background-color: #23272a;
+  padding: 40px;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-logo {
+  width: 120px;
+}
+
+.footer-btn {
+  background-color: #5865f2;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 40px;
+  text-decoration: none;
+  font-weight: bold;
+}
+/* Responsividade para telas até 768px */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 20px;
+  }
+
+  .nav-links {
+    gap: 10px;
+    font-size: 14px;
+  }
+
+  .hero {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 32px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+  }
+
+  .buttons {
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .section-1,
+  .section-2,
+  .section-3 {
+    padding: 40px 20px;
+  }
+
+  .container {
+    flex-direction: column !important; /* garante que a ordem empilha */
+  }
+
+  .final-section {
+    padding: 60px 20px;
+  }
+
+  .final-content h2 {
+    font-size: 24px;
+  }
+
+  .final-content p {
+    font-size: 14px;
+  }
+
+  footer {
+    padding: 20px;
+  }
+
+  .footer-btn {
+    width: 100%;
+  }
+  @media (max-width: 320px) {
+  body, html {
+    overflow-x: hidden;
+  }
+
+  /* Garante que imagens e containers não ultrapassem a largura */
+  img, .container, .hero-content, .text-box, .image-box {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* Reduz o padding para evitar estourar */
+  .hero, .section-1, .section-2, .section-3, .final-section {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+}
